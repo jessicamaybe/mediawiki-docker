@@ -2,7 +2,7 @@
 branch="$(echo REL$MEDIAWIKI_MAJOR_VERSION | sed 's/\./_/g')"
 
 
-if [ ! -f $branch ]; then
+if [ ! -f /extensions/$branch ]; then
 
 rm -rf /extensions/ConfirmAccount
 git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-ConfirmAccount /extensions/ConfirmAccount
@@ -16,6 +16,6 @@ git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-JsonConfi
 rm -rf /extensions/TemplateStyles
 git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-TemplateStyles /extensions/TemplateStyles
 
-touch $branch
+touch /extensions/$branch
 
 fi
