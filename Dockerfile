@@ -10,6 +10,7 @@ RUN apt-get update; \
 COPY php.ini /usr/local/etc/php/conf.d/mediawiki.ini
 
 COPY entrypoint.sh /entrypoint.sh
+COPY update_extensions.sh /update_extensions.sh
 
 VOLUME ["/extensions" , "/config", "/skins"]
 

@@ -9,7 +9,7 @@ handle_signal (){
 
 trap "handle_signal" SIGINT SIGTERM SIGHUP
 
-sh update_extensions.sh
+test -f /update_extensions.sh && sh /update_extensions.sh
 
 # Start the wiki
 if [[ "$1" == "wiki" ]] ; then
