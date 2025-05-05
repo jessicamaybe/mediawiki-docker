@@ -1,4 +1,4 @@
-FROM mediawiki:latest
+FROM mediawiki:stable
 
 USER 0
 
