@@ -16,6 +16,9 @@ git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-JsonConfi
 rm -rf /extensions/TemplateStyles
 git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-TemplateStyles /extensions/TemplateStyles
 
+rm -rf /extensions/ConfirmEdit
+git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-ConfirmEdit /extensions/ConfirmEdit
+
 touch /extensions/$branch
 
 fi
