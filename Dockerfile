@@ -5,7 +5,7 @@ ENV GIT_VERSION_STR=REL1_43
 USER 0
 
 RUN apt-get update; \
-        apt-get install -y lua5.1 git imagemagick librsvg2-2 python3-setuptools python3-pip; \
+        apt-get install -y lua5.1 git imagemagick librsvg2-2 python3-setuptools python3-pip sendmail; \
         rm -rf /var/lib/apt/lists/*;
 
 RUN echo "Extensions"; \
