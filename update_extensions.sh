@@ -19,6 +19,8 @@ git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-TemplateS
 rm -rf /extensions/ConfirmEdit
 git clone -b $branch https://github.com/wikimedia/mediawiki-extensions-ConfirmEdit /extensions/ConfirmEdit
 
+git clone https://github.com/jayktaylor/mw-discord /extensions/mw-discord
+
 touch /extensions/$branch
 
 fi
