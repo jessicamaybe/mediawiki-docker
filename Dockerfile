@@ -14,9 +14,6 @@ RUN echo "Extensions"; \
         git clone -b $GIT_VERSION_STR https://github.com/wikimedia/mediawiki-extensions-JsonConfig /var/www/html/extensions/JsonConfig; \
         git clone -b $GIT_VERSION_STR https://github.com/wikimedia/mediawiki-extensions-TemplateStyles /var/www/html/extensions/TemplateStyles; \
 
-        git clone -b $GIT_VERSION_STR https://github.com/wikimedia/mediawiki-extensions-SyntaxHighlight_GeSHi /var/www/html/extensions/SyntaxHighlight_GeSHi; \
-        chmod a+x /var/www/html/extensions/SyntaxHighlight_GeSHi/pygments/pygmentize; \
-
         git clone -b $GIT_VERSION_STR https://github.com/wikimedia/mediawiki-extensions-MsUpload /var/www/html/extensions/MsUpload; \
         
         # branchless plugins
